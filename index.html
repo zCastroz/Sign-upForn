@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>Sign-up</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <div class="test"></div>
+            <img id="logo-K" src="./img/logo-K.png" alt="logo">
+            KASTRO
+        </div>
+        <p id="photo_credit">Photo by
+            <a target="_blank" class="link_author" href="https://unsplash.com/pt-br/@maximalfocus">Maximalfocus</a> on
+            <a target="_blank" class="link_site" href="https://unsplash.com">Unsplash</a>
+        </p>
+    </header>
+    <main>
+        <form action="get">
+            <div class="about">
+                <strong>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                        Ad atque, enim praesentium ipsam reiciendis officia, amet iste laudantium
+                        quasi quia non quibusdam veritatis distinctio. Ipsam accusantium
+                        quibusdam consectetur maxime voluptates!
+                    </p>
+                    <p>Sign-up to continue.</p>
+                </strong>
+            </div>
+
+            <div class="fill-fields-container">
+                <h1 class="form-title">Let's do this!</h1>
+                <div class="inputs-container">
+                    <div class="fill-fields">
+                        <label for="first-name">FIRST NAME</label>
+                        <input id="first-name" name="first-name" type="text">
+                    </div>
+
+                    <div class="fill-fields">
+                        <label for="last-name">LAST NAME</label>
+                        <input id="last-name" name="last-name" type="text">
+                    </div>
+
+                    <div class="fill-fields">
+                        <label for="email">EMAIL</label>
+                        <input id="email" name="email" type="email">
+                    </div>
+
+                    <div class="fill-fields">
+                        <label for="phone-number">PHONE NUMBER</label>
+                        <input id="phone-number" name="phone-number" type="tel"
+                            pattern="(\(\d{2}\)\s?)?(\d{2}\s)?\d{4,5}-?\d{4}">
+                    </div>
+
+                    <div class="fill-fields">
+                        <label for="password">PASSWORD</label>
+                        <input id="password" name="password" type="password">
+                        <span class="error-password hidden">Passwords do not match!</span>
+                    </div>
+
+                    <div class="fill-fields">
+                        <label for="confirm-password">CONFIRM PASSWORD</label>
+                        <input id="confirm-password" name="confirm-password" type="password">
+                        <span class="error-password hidden">* Passwords do not match</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="buttons-container">
+                <button type="submit">Create Acconut</button>
+                <div class="have-login">Already have an account? <a id="link-login" href="#">Log in</span></div>
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>

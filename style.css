@@ -1,0 +1,153 @@
+:root {
+    font-size: 62.5%;
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    src: url('./fonts/doctorGlitch.otf');
+    font-family: 'doctor glitch';    
+    font-weight: normal;
+}
+
+body {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header, main {
+    display: flex;
+    flex-direction: column;
+}
+header {
+    height: 100vh;
+    background: url("./img/header-bg.png");
+    color: #fff;
+    flex: 1 1 50px;
+    align-items: center;
+}
+main {
+    background: #fdfdfd;
+    font-family: 'Noto Sans' , sans-serif;
+    padding: 10em 0;
+    flex: 1 2 600px;
+}
+form > div {
+    padding: 0 200px 0 50px;
+}
+
+.logo-container {
+    text-align: center;
+    background: #3131317a;
+    font-family: 'doctor glitch';
+    font-size: 4.4rem;
+
+    margin-top: 7.75em;
+    padding: 1em;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .2em;
+}
+#logo-K {
+    width: 100px;
+    filter: hue-rotate(45deg);
+}
+#photo_credit {
+    font-family: sans-serif;
+    font-size: 1.2rem;
+
+    margin-top: auto;
+}
+a {
+    color: #fff;
+}
+
+
+.about {
+    font-family: sans-serif;
+    font-size: 1.6rem;
+    padding-top: 5em;
+    padding-right: 5em;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.8em;
+
+    position: fixed;
+    top: 10em;
+}
+label {
+    font-size: 1.1em;
+}
+
+.fill-fields-container {
+    background-color: #fff;
+    padding-top: 3em;
+    padding-bottom: 3.75em;
+
+    filter: drop-shadow(0 5px 6px rgba(0, 0, 0, 0.1))
+            drop-shadow(0 6px 8px rgba(0, 0, 0, 0.1));
+}
+.form-title {
+    margin: 0 0 1.2em;
+}
+
+.inputs-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em 5vw;
+}
+.fill-fields {
+    display: flex;
+    flex-direction: column;    
+}
+.fill-fields > input {
+    border: 1.5px solid #E5E7EB;
+    border-radius: 4px;
+    
+    height: 20px;
+    width: 200px;
+    flex: 1 1 auto;
+}
+.fill-fields > input:focus {
+    border: 1px solid #002fff;
+    outline: 0;
+    
+    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.1))
+            drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.1));    
+}
+.fill-fields > input:invalid {
+    border: 1px solid #ff1529;
+    outline: 0;
+}
+
+.error-password {
+    color: #ff1529;
+    display: block;
+}
+
+button[type='submit'] {
+    border: 0;
+    border-radius: 8px;
+    background-color: #ff1529;
+    color: #fff;
+    padding: .9em 3em;
+}
+.have-login {
+    font-size: 1.4rem;
+    margin-top: 2em;
+}
+#link-login {
+    color: #ff1529;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.hidden {
+    display: none;
+}
